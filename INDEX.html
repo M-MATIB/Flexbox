@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Flexbox Challenge</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="PICS/1.jpg" alt="">
+            <h2>CROSS</h2>
+            <p>FAITH</p>
+        </div>
+        <div class="card">
+            <img src="PICS/2.jpg" alt="">
+            <h2>CAT</h2>
+            <p>CUTE</p>
+        </div>
+        <div class="card">
+            <img src="PICS/3.jpg" alt="">
+            <h2>BOOKS</h2>
+            <p>KNOWLEDGE</p>
+        </div>
+        <div class="card">
+            <img src="PICS/4.jpg" alt="">
+            <h2>ROSE</h2>
+            <p>NATURE'S BEAUTY</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CC14 Lab Act 7: Flexbox by MATIB, MELQUIN GIL M.</p>
+    </footer>
+</body>
+
+<style>
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b1c5e3;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+header{
+    display:flex;
+    justify-content: center;
+}
+.card-container{
+    display:flex;
+    justify-content: center;
+    height:400px;
+    }
+
+.card img{
+    max-width: 100%; /* Ensures the image doesn't exceed the container width */
+    height: 90%;/* Set a fixed height for the images */
+    object-fit: cover; /* Ensures the image covers the entire space without stretching */
+    object-position: center; 
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 20px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+</style>
+
+</html>
